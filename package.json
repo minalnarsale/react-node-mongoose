@@ -1,0 +1,26 @@
+{
+  "name": "react-node-mongoose",
+  "version": "1.0.0",
+  "description": "web development  with react, node and mongoose",
+  "main": "server.js",
+  "scripts": {
+    "eslintCheck": "eslint --ignore-path .gitignore .",
+    "server": "nodemon -r dotenv/config server.js",
+    "client": "cd client && yarn start",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "author": "Minal Narsale",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^3.1.0",
+    "concurrently": "^5.2.0",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4",
+    "typescript": "^3.9.5"
+  }
+}
